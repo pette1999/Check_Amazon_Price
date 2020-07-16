@@ -5,7 +5,7 @@ import time
 
 URL = "https://www.amazon.com/Samsung-970-EVO-Plus-MZ-V7S1T0B/dp/B07MFZY2F2/ref=sr_1_3?dchild=1&keywords=samsung+970+evo&qid=1594860637&sr=8-3"
 
-headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"}
+headers = {"User-Agent": 'DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/1wE8x_OSWGLdMhXK5mR0Ktf_wt3hegfZilnGntKyb5sUAXqdbP_NW6UXx24BpL01IiqhkhVfORp6Js9TjdYx-SQ" --redirect-url="https: // remotedesktop.google.com/_/oauthredirect" --name=$(hostname)'}
 
 def check_price():
     page = requests.get(URL, headers=headers)
