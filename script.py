@@ -9,7 +9,7 @@ headers = {"User-Agent": 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KH
 
 def check_price():
     page = requests.get(URL, headers=headers)
-    soup = BeautifulSoup(page.content, 'html.parser')
+    soup = BeautifulSoup(page.content, 'html5lib')
 
     price = soup.find(id="priceblock_ourprice").get_text()
     converted_price = float(price[1:].strip())
