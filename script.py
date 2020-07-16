@@ -17,7 +17,7 @@ def check_price():
     
     print(converted_price)
 
-    if(converted_price < 160):
+    if(converted_price < 190):
         send_email()
 
 def send_email():
@@ -43,5 +43,5 @@ def send_email():
     
 while(True):
     check_price()
-    time.sleep(3600)
+    time.sleep(60)
     
