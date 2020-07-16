@@ -11,7 +11,7 @@ def check_price():
     page = requests.get(URL, headers=headers)
     soup = BeautifulSoup(page.content, 'html.parser')
 
-    title = soup.find(id="productTitle").get_text()
+    #title = soup.find(id="productTitle").get_text()
     price = soup.find(id="priceblock_ourprice").get_text()
     converted_price = float(price[1:].strip())
     
